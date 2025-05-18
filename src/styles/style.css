@@ -1,0 +1,394 @@
+
+/*-fx-background-color: #939D2A; -fx-text-fill: white; -fx-pref-width: 200px; -fx-font-weight: bold; -fx-font-size: 24px;*/
+
+
+/*Button One (Confirm buttons)*/
+.confirmButton3 {
+    -fx-background-color: none;
+    -fx-text-fill: white;
+    -fx-font-size: 32.0;
+    -fx-pref-height: 69.0;
+    -fx-pref-width: 170.0;
+}
+
+
+.confirmButton2 {
+    -fx-background-radius: 50;
+    -fx-border-radius: 50;
+    -fx-background-color: #EBD66E;
+    -fx-text-fill: #654E48;
+    -fx-font-weight: bold;
+    -fx-font-size: 32.0;
+    -fx-pref-height: 69.0;
+    -fx-pref-width: 346.0;
+}
+
+.confirmButton2:hover{
+    -fx-background-color: #9CA66D;
+
+}
+
+.confirmButton {
+    -fx-background-radius: 50;
+    -fx-border-radius: 50;
+    -fx-background-color: #939D2A;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 32.0;
+    -fx-pref-height: 69.0;
+    -fx-pref-width: 346.0;
+}
+
+.confirmButton:hover{
+    -fx-background-color: #ADB745;
+
+}
+
+/*Button Two (Home buttons)*/
+
+.homeButton{
+    -fx-background-radius: 30;
+    -fx-border-radius: 30;
+    -fx-background-color: #939D2A;
+    -fx-text-fill: white;
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-pref-height: 322.0;
+    -fx-pref-width: 242.0;
+}
+
+.homeButton:hover{
+    -fx-background-color:  #ADB745;
+}
+
+/*Button Three (Navbar buttons)*/
+.navButton{
+    -fx-background-radius: 50;
+    -fx-border-radius: 50;
+    -fx-background-color: #EBD66E;
+    -fx-text-fill: #654E48;
+    -fx-pref-width: 250px;
+    -fx-font-size: 24px;
+}
+
+.navButton:hover{
+    -fx-background-color: #a2af4a;
+}
+
+.navButton2{
+    -fx-background-radius: 50;
+    -fx-border-radius: 50;
+    -fx-background-color: #939D2A;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-pref-width: 250px;
+    -fx-font-size: 24px;
+}
+
+.navButton2:hover{
+    -fx-background-color: #ADB745;
+}
+
+
+.active{
+    -fx-background-radius: 50;
+    -fx-border-radius: 50;
+    -fx-background-color: #939D2A;
+    -fx-text-fill: white;
+    -fx-pref-width: 250px;
+    -fx-font-size: 24px;
+}
+
+
+/*Text Field Design*/
+.textInput{
+    -fx-text-fill: #5C3931;
+    -fx-font-size: 28.0;
+    -fx-background-radius: 50;
+    -fx-border-radius: 50;
+}
+
+/*Combo box Design*/
+
+/*Header Bar*/
+.header{
+    -fx-background-color: #939D2A;
+    -fx-pref-width: 1920.0;
+    -fx-pref-height: 150.0;
+}
+
+.header2{
+    -fx-background-color: #EBD66E;
+    -fx-pref-width: 1920.0;
+    -fx-pref-height: 150.0;
+}
+
+.headerTitle{
+    -fx-text-fill: white;
+    -fx-font-size: 36px;
+    -fx-font-weight: bold;
+}
+
+.headerTitle2{
+    -fx-text-fill: #654E48;
+    -fx-font-size: 42px;
+    -fx-font-weight: bold;
+}
+
+.header3{
+    -fx-background-color: #939D2A;
+    -fx-pref-width: 1920.0;
+    -fx-pref-height: 100.0;
+}
+.headerTitle3{
+    -fx-text-fill: white;
+    -fx-font-size: 42px;
+    -fx-font-weight: bold;
+}
+
+/*Header Title*/
+.labels{
+    -fx-font-size: 28.0;
+}
+
+.labelTitle{
+    -fx-font-size: 28.0;
+    -fx-text-fill: white;
+}
+
+/*Combo Box*/
+.combo-box {
+    -fx-background-radius: 50;
+    -fx-border-radius: 50;
+}
+
+.combo-box .text-field {
+    -fx-background-radius: 50 0 0 50;
+    -fx-border-radius: 50 0 0 50;
+}
+
+.combo-box .arrow-button {
+    -fx-background-radius: 0 50 50 0;
+    -fx-border-radius: 0 50 50 0;
+}
+
+/* TableView */
+.table-view {
+    -fx-font-size: 24px;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #f0f0f0;
+}
+
+.table-view .table-cell {
+    -fx-font-size: 24px;
+    -fx-padding: 3px;
+}
+
+.table-view .column-header .label {
+    -fx-font-size: 28px;
+}
+
+.table-view .filler {
+    -fx-background-color: transparent;
+}
+
+/*Order Card Styles*/
+.addminusbtn {
+    -fx-background-radius: 50px;
+    -fx-border-radius: 50px;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-color: #939D2A;
+    -fx-font-weight: bold;
+    -fx-font-size: 28;
+}
+
+#ordercard {
+    -fx-background-radius: 15px;
+    -fx-border-radius: 15px;
+    -fx-background-color: #EBD66E;
+    -fx-end-margin: 20;
+}
+
+#orderDishName, #orderDishPrice, #orderQuantity, #lblQuantity,#orderDishSize{
+    -fx-text-fill: #654E48;
+    -fx-font-size: 28.0;
+    -fx-font-weight: bold;
+}
+
+
+/*Dish Card Styles*/
+#card {
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-background-color: #EBD66E;
+}
+
+#picture {
+    -fx-background-color: white;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+}
+
+#btnadd {
+    -fx-background-radius: 50px;
+    -fx-border-radius: 50px;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-color: #939D2A;
+    -fx-font-weight: bold;
+    -fx-font-size: 28;
+}
+
+#dishName, #price, #status{
+    -fx-text-fill: #654E48;
+    -fx-font-size: 22.0;
+    -fx-font-weight: bold;
+}
+
+#quantity, #size{
+    -fx-text-fill: #654E48;
+    -fx-font-size: 20.0;
+    -fx-font-weight: bold;
+}
+
+/*MAIN POS*/
+
+#rightpane {
+    -fx-background-color: #644B46;
+}
+
+.buttons {
+    -fx-background-radius: 50;
+    -fx-border-radius: 50;
+    -fx-background-color: #939D2A;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 20.0;
+    -fx-pref-width: 120;
+}
+
+.buttons:hover{
+    -fx-background-color: #ADB745;
+
+}
+
+
+#HdrDatetime {
+    -fx-background-color: #ADB745;
+    -fx-text-fill: #FFFFFF;
+}
+
+#lblTotal, #total{
+    -fx-text-fill: #FFFFFF;
+}
+
+#orders {
+    -fx-background-color: #cccaca;
+}
+
+
+/*Line Chart*/
+/* Main chart styling */
+.chart {
+    -fx-background-color: rgba(255, 255, 255, 0.7);
+    -fx-background-radius: 15px;
+    -fx-padding: 10px;
+}
+
+.chart-plot-background {
+    -fx-background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Grid lines styling */
+.chart-horizontal-grid-lines {
+    -fx-stroke: rgba(0, 0, 0, 0.1);
+}
+
+.chart-vertical-grid-lines {
+    -fx-stroke: rgba(0, 0, 0, 0.1);
+}
+
+/* Series styling - for the line itself */
+.chart-series-line {
+    -fx-stroke: #008080;
+    -fx-stroke-width: 3px;
+}
+
+/* Data point styling */
+.chart-line-symbol {
+    -fx-background-color: #008080, white;
+    -fx-background-insets: 0, 2;
+    -fx-background-radius: 6px;
+    -fx-padding: 6px;
+}
+
+/* Data point hover effect (will be applied via Java) */
+.chart-line-symbol-hover {
+    -fx-background-color: #005050, white;
+    -fx-background-insets: 0, 3;
+    -fx-background-radius: 8px;
+    -fx-padding: 8px;
+}
+
+/* Axis styling */
+.axis {
+    -fx-tick-label-fill: #000000;
+    -fx-font-family: "SansSerif";
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+/* Month labels on x-axis */
+.axis-label, .chart-x-axis .axis-label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-font-family: "SansSerif";
+}
+
+/* Value labels on y-axis */
+.chart-y-axis .axis-label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-font-family: "SansSerif";
+}
+
+/* Tooltip styling for data points */
+.chart-line-symbol .tooltip {
+    -fx-font-size: 14px;
+    -fx-font-family: "SansSerif";
+}
+
+/* Value labels above data points (applied in Java) */
+.data-value-label {
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+    -fx-font-family: "SansSerif";
+}
+
+/* Legend styling */
+.chart-legend {
+    -fx-background-color: rgba(255, 255, 255, 0.7);
+    -fx-background-radius: 5px;
+    -fx-padding: 10px;
+}
+
+.chart-legend-item {
+    -fx-font-size: 20px;
+    -fx-font-family: "SansSerif";
+}
+
+/* Chart title styling */
+.chart-title {
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+    -fx-font-family: "SansSerif";
+}
+
+
+
+
+
+
+
+

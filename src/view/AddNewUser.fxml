@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+
+<BorderPane prefHeight="1080.0" stylesheets="/styles/style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddNewUserController">
+    <center>
+        <AnchorPane fx:id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="1080.0" minWidth="1920.0" prefHeight="1080.0" style="-fx-background-image: url('/images/background-img2.png');; -fx-background-repeat: no-repeat; -fx-background-size: cover;" BorderPane.alignment="CENTER">
+            <children>
+                <AnchorPane fx:id="headerDish" prefHeight="150.0" styleClass="header" stylesheets="@../styles/style.css">
+                    <children>
+                        <Label layoutX="711.0" layoutY="45.0" styleClass="headerTitle3" text="Add New User Account" />
+                  <Button fx:id="btnHome" contentDisplay="RIGHT" graphicTextGap="10.0" layoutX="40.0" layoutY="41.0" maxHeight="-Infinity" minHeight="-Infinity" mnemonicParsing="false" onAction="#onHomeBtnClick" prefHeight="58.0" prefWidth="406.0" styleClass="confirmButton" stylesheets="@../styles/style.css" text="Back to Home">
+                     <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/home_icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                    </children>
+                </AnchorPane>
+                <Label layoutX="413.0" layoutY="286.0" prefHeight="40.0" prefWidth="143.0" styleClass="labelTitle" stylesheets="@../styles/style.css" text="First Name" />
+                <Label layoutX="971.0" layoutY="564.0" prefHeight="40.0" prefWidth="101.0" styleClass="labelTitle" stylesheets="@../styles/style.css" text="Address" />
+                <Label layoutX="444.0" layoutY="559.0" prefHeight="40.0" prefWidth="69.0" styleClass="labelTitle" stylesheets="@../styles/style.css" text="Email" textAlignment="CENTER" />
+                <Label layoutX="732.0" layoutY="277.0" prefHeight="53.0" prefWidth="185.0" styleClass="labelTitle" stylesheets="@../styles/style.css" text="Last Name" />
+                <Label layoutX="415.0" layoutY="416.0" prefHeight="40.0" prefWidth="129.0" styleClass="labelTitle" stylesheets="@../styles/style.css" text="Contact" />
+                <TextField fx:id="firstNameField" layoutX="413.0" layoutY="339.0" prefHeight="58.0" prefWidth="282.0" styleClass="textInput" stylesheets="@../styles/style.css" />
+                <Label layoutX="732.0" layoutY="410.0" prefHeight="27.0" prefWidth="176.0" styleClass="labelTitle" stylesheets="@../styles/style.css" text="Role" />
+                <TextField fx:id="contactField" layoutX="415.0" layoutY="469.0" prefHeight="58.0" prefWidth="279.0" styleClass="textInput" stylesheets="@../styles/style.css" />
+                <Button fx:id="btnSaveDish" layoutX="1112.0" layoutY="733.0" maxHeight="-Infinity" minHeight="-Infinity" mnemonicParsing="false" onAction="#saveUser" prefHeight="58.0" prefWidth="406.0" styleClass="confirmButton" stylesheets="@../styles/style.css" text="Save" />
+            <Button fx:id="btnClear" layoutX="379.0" layoutY="733.0" maxHeight="-Infinity" minHeight="-Infinity" mnemonicParsing="false" onAction="#clearFields" prefHeight="58.0" prefWidth="406.0" styleClass="confirmButton2" stylesheets="@../styles/style.css" text="Clear" />
+            <Button fx:id="btnLoadDish" layoutX="743.0" layoutY="733.0" maxHeight="-Infinity" minHeight="-Infinity" mnemonicParsing="false" onAction="#deleteUser" prefHeight="58.0" prefWidth="406.0" styleClass="confirmButton2" stylesheets="@../styles/style.css" text="Delete" />
+            <ComboBox fx:id="roleComboBox" layoutX="732.0" layoutY="470.0" prefHeight="58.0" prefWidth="274.0" styleClass="textInput" stylesheets="@../styles/style.css" />
+            <TextField fx:id="addressField" layoutX="971.0" layoutY="612.0" prefHeight="58.0" prefWidth="420.0" styleClass="textInput" stylesheets="@../styles/style.css" />
+            <TextField fx:id="emailField" layoutX="443.0" layoutY="608.0" prefHeight="58.0" prefWidth="411.0" styleClass="textInput" stylesheets="@../styles/style.css" />
+            <Label layoutX="1189.0" layoutY="285.0" prefHeight="40.0" prefWidth="132.0" styleClass="labelTitle" stylesheets="@../styles/style.css" text="Username" textAlignment="CENTER" />
+            <Label layoutX="1198.0" layoutY="416.0" prefHeight="40.0" prefWidth="118.0" styleClass="labelTitle" stylesheets="@../styles/style.css" text="Password" textAlignment="CENTER" />
+            <ComboBox fx:id="usernameField" editable="true" layoutX="1086.0" layoutY="335.0" prefHeight="58.0" prefWidth="349.0" styleClass="textInput" stylesheets="@../styles/style.css" />
+            <TextField fx:id="passwordField" layoutX="1088.0" layoutY="472.0" prefHeight="58.0" prefWidth="346.0" styleClass="textInput" stylesheets="@../styles/style.css" />
+            <TextField fx:id="lastNameField" layoutX="732.0" layoutY="339.0" prefHeight="58.0" prefWidth="279.0" styleClass="textInput" stylesheets="@../styles/style.css" />
+            <Line endX="-15.0" endY="231.0" layoutX="1061.0" layoutY="316.0" startX="-15.0" startY="-3.0" stroke="#c6baba" />
+            </children>
+        </AnchorPane>
+   </center>
+
+</BorderPane>

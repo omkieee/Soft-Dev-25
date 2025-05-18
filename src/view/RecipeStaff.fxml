@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.text.Font?>
+<BorderPane fx:id="mainContainer" minHeight="-Infinity" prefHeight="1080.0" stylesheets="/styles/style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RecipeController">
+
+    <left>
+        <AnchorPane prefWidth="300.0" style="-fx-background-color: #654B46;" stylesheets="/styles/style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+            <children>
+                <Button fx:id="homeBtn" graphicTextGap="10.0" layoutX="27.0" layoutY="24.0" onAction="#onHomeStaffBtnClick" styleClass="navButton2" stylesheets="@../styles/style.css" text="Back to Home">
+                    <graphic>
+                        <ImageView fitHeight="26.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/home_icon.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <ImageView fitHeight="231.0" fitWidth="213.0" layoutX="44.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/logo.png" />
+                    </image>
+                </ImageView>
+                <Button fx:id="stocksBtn1" layoutX="31.0" layoutY="481.0" onAction="#onStocksStaffBtnClick" prefHeight="51.0" prefWidth="245.0" styleClass="navButton" stylesheets="@../styles/style.css" text="Stocks" />
+                <Button fx:id="recipeBtn1" layoutX="31.0" layoutY="547.0" onAction="#onRecipeStaffBtnClick" styleClass="active" stylesheets="@../styles/style.css" text="Recipe">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Button>
+                <Button fx:id="dishBtn1" layoutX="31.0" layoutY="611.0" onAction="#onDishStaffBtnClick" styleClass="navButton" stylesheets="@../styles/style.css" text="Dish" />
+                <Label layoutX="104.0" layoutY="274.0" text="STAFF" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="32.0" />
+                    </font>
+                </Label>
+                <Button fx:id="logoutBtn" graphicTextGap="10.0" layoutX="31.0" layoutY="910.0" onAction="#onLogoutBtnClick" styleClass="navButton2" stylesheets="@../styles/style.css" text="Log Out">
+                    <graphic>
+                        <ImageView fitHeight="26.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/logout_icon.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+            </children>
+        </AnchorPane>
+
+    </left>
+
+    <center>
+        <AnchorPane prefHeight="1091.0" prefWidth="1596.0" style="-fx-background-image: url('/images/background-img2.png');; -fx-background-repeat: no-repeat; -fx-background-size: cover;" stylesheets="@../styles/style.css" BorderPane.alignment="CENTER">
+            <children>
+                <AnchorPane styleClass="header3">
+                    <children>
+                        <Label layoutX="59.0" layoutY="19.0" styleClass="headerTitle3" text="View Recipes" />
+                    </children>
+                </AnchorPane>
+                <TextField fx:id="searchBox" layoutX="56.0" layoutY="136.0" prefHeight="58.0" prefWidth="395.0" styleClass="textInput" stylesheets="@../styles/style.css" text="Search" />
+                <ComboBox fx:id="filterBox" editable="true" layoutX="464.0" layoutY="136.0" prefHeight="58.0" prefWidth="337.0" promptText="Filter By" styleClass="textInput" stylesheets="@../styles/style.css" />
+                <TableView fx:id="dishTable" layoutX="31.0" layoutY="231.0" prefHeight="764.0" prefWidth="889.0">
+                    <columns>
+                        <TableColumn fx:id="productNameColumn" prefWidth="278.0" text="Dish Name" />
+                        <TableColumn fx:id="sizeColumn" prefWidth="176.0" text="Size" />
+                        <TableColumn fx:id="categoryColumn" prefWidth="239.0" text="Category" />
+                        <TableColumn fx:id="actionColumn" prefWidth="195.0" />
+                    </columns>
+                </TableView>
+                <AnchorPane layoutX="949.0" layoutY="100.0" prefHeight="991.0" prefWidth="668.0" style="-fx-background-color: #EBD66E;" stylesheets="@../styles/style.css">
+                    <children>
+                        <Label fx:id="recipeName" layoutX="49.0" layoutY="22.0" styleClass="headerTitle2" text="Recipe Name" />
+                        <TableView fx:id="recipeTable" layoutX="49.0" layoutY="99.0" prefHeight="793.0" prefWidth="582.0" stylesheets="@../styles/style.css">
+                            <columns>
+                                <TableColumn fx:id="nameColumn" editable="false" prefWidth="295.0" sortable="false" text="Ingredients" />
+                                <TableColumn fx:id="amountColumn" editable="false" prefWidth="155.0" sortable="false" text="Quantity" />
+                                <TableColumn fx:id="unitColumn" editable="false" prefWidth="131.0" sortable="false" text="Unit" />
+                            </columns>
+                        </TableView>
+                        <Label fx:id="sizeName" layoutX="518.0" layoutY="27.0" styleClass="headerTitle" text="Size" textAlignment="RIGHT" />
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+    </center>
+
+</BorderPane>

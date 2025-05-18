@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="mainContainer" prefHeight="1080.0" prefWidth="1920.0" stylesheets="/styles/style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StockController">
+   <left>
+        <AnchorPane prefHeight="1080.0" style="-fx-background-image: url('/images/background-img2.png');; -fx-background-repeat: no-repeat; -fx-background-size: cover;" stylesheets="@../styles/style.css" BorderPane.alignment="CENTER">
+            <children>
+                <AnchorPane prefHeight="150.0" prefWidth="1973.0" styleClass="header3">
+                    <children>
+                        <Label layoutX="59.0" layoutY="19.0" styleClass="headerTitle3" text="View Recipes" />
+                    </children>
+                </AnchorPane>
+            <TextField layoutX="56.0" layoutY="136.0" prefHeight="58.0" prefWidth="395.0" styleClass="textInput" stylesheets="@../styles/style.css" text="Search" />
+            <ComboBox fx:id="filterBox" editable="true" layoutX="464.0" layoutY="136.0" prefHeight="58.0" prefWidth="337.0" promptText="Filter By" styleClass="textInput" stylesheets="@../styles/style.css" />
+            <TableView layoutX="56.0" layoutY="229.0" prefHeight="793.0" prefWidth="896.0">
+              <columns>
+                <TableColumn prefWidth="401.0" text="Dish Name" />
+                <TableColumn prefWidth="260.0" text="Category" />
+                  <TableColumn prefWidth="234.0" />
+              </columns>
+            </TableView>
+            <AnchorPane layoutX="1016.0" layoutY="100.0" prefHeight="991.0" prefWidth="903.0" style="-fx-background-color: #EBD66E;" stylesheets="@../styles/style.css">
+               <children>
+                  <Label layoutX="322.0" layoutY="26.0" styleClass="headerTitle2" text="Recipe Name" />
+                  <TableView fx:id="dishTable" layoutX="101.0" layoutY="107.0" prefHeight="793.0" prefWidth="735.0" stylesheets="@../styles/style.css">
+                     <columns>
+                        <TableColumn fx:id="nameColumn" editable="false" prefWidth="252.0" sortable="false" text="Ingredients" />
+                        <TableColumn fx:id="categoryColumn" editable="false" prefWidth="217.0" sortable="false" text="Quantity" />
+                        <TableColumn fx:id="priceColumn" editable="false" prefWidth="314.0" sortable="false" text="Unit" />
+                     </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+            </children>
+        </AnchorPane>
+   </left>
+
+</BorderPane>
